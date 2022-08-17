@@ -1,0 +1,67 @@
+:root {
+    --background-color: black;
+    --button-background: rgba(248, 244, 244, 0.121);
+    --number-color: white;
+    --symbol-color: green;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+}
+.container {
+    background-color: ghostwhite;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+}
+.Calculator {
+    box-shadow: 0 3px 10px  rgba(0, 0, 0, 0.2);;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    height: fit-content;
+    width: fit-content;
+    overflow: hidden;
+}
+.Calculator-buttons {
+    display: grid;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    padding: 10px;
+    margin: 10px;
+    grid-template-columns: repeat(4, 50px);
+}
+.Calculator-display {
+    background-color: var(--background-color);
+    color: var(--number-color);
+    border-radius: 10px;
+    border-bottom: 1px var(--button-background) solid;
+    text-align: right;
+    padding: 1.5rem 1rem;
+}
+button {
+    background-color: var(--button-background);
+    border-radius: 50%;
+    font-size: 25pt;
+    color: var(--number-color);
+}
+button:hover {
+    background-color: rgba(248, 248, 255, 0.493);
+}
+[data-type="operator"] {
+    color: var(--symbol-color);
+}
+.equation-operator {
+    background-color: var(--symbol-color);
+    color: var(--number-color);
+}
+.clear-operator {
+    background-color: var(--button-background);
+    color: orangered;
+}
