@@ -1,2 +1,2 @@
 # Calculator
-A clone of my phone's calculator app
+I tried to clone my phone's calculator app
